@@ -40,7 +40,7 @@ def log_specgram(audio, sample_rate, window_size=20,step_size=10, eps=1e-10):
 
 def create_spectrogram():
 	for filename in os.listdir('C:/Users/harshini_2/Desktop/desktop icons/flask/test_data'):
-		audio= 'C:/Users/harshini_2/Desktop/desktop icons/flask/test_data/harshu_file.wav'
+		audio= 'C:/Users/harshini_2/Desktop/desktop icons/flask/test_data/sample.wav'
 		y,sr=librosa.load(audio,sr=16000)
 		emphasized_signal = np.append(y[0], y[1:] - pre_emphasis * y[:-1])
 		freqs,times,spectrogram=log_specgram(emphasized_signal,sr)
@@ -52,7 +52,7 @@ def create_spectrogram():
 		plt.xlabel('time')
 		plt.title('Mel power spectrogram ')
 		plt.tight_layout()
-		plt.savefig('C:/Users/harshini_2/Desktop/desktop icons/flask/test_data/test/harshu_file.png')
+		plt.savefig('C:/Users/harshini_2/Desktop/desktop icons/flask/test_data/test/sample.png')
 		plt.clf()
 		plt.close()
 	
