@@ -1,0 +1,113 @@
+<html>
+<head>
+	{{ JSGlue.include() }}
+	<link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merienda|Saira+Semi+Condensed&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<style>
+		body{
+			background-color:rgb(20, 10, 60);
+		}
+		.spell{
+			font-size:60px;
+			text-align:center;
+			font-family: 'Merienda', cursive;
+			font-family: 'Saira Semi Condensed', sans-serif;
+			padding-top:3%;
+			letter-spacing: 4px;
+			color:white;
+
+		}
+		#words{
+			font-family: 'Merienda', cursive;
+			font-size:60px;
+			text-align:center;
+			color:rgb(21, 153, 242);
+
+		}
+
+		.fir{
+			line-height: 30px;
+		}
+		button{
+			border-width: 4px;
+			border-color:rgb(21, 153, 242);
+			margin-top:2px;
+			color:white;
+			background-color: rgb(17, 8, 50);
+			padding-top:16px;
+			padding-bottom:16px;
+			padding-left:27px;
+			padding-right:27px;
+			font-size:20px;
+			letter-spacing: 3px;
+		}
+
+		#stopButton{
+			margin-left:550px;
+		}
+		#recordButton{
+			margin-left:120px;
+		}
+		#paras{
+			font-family: 'Merienda', cursive;
+			font-family: 'Saira Semi Condensed', sans-serif;
+			font-size:40px;
+			text-align:center;
+			/*color:rgb(21, 153, 242);
+*/			padding-top:900px;
+			color:white;
+			letter-spacing: 3px;
+		}
+		#spans{
+			padding-left:150px;
+		}
+		span{
+			padding-left:60px;
+		}
+		#final{
+			font-family: 'Merienda', cursive;
+			font-size:40px;
+			text-align:center;
+			color:rgb(16, 237, 39);
+			letter-spacing: 3px;
+
+		}
+		button:hover{
+			background-color:rgb(31, 10, 87);;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="fir">
+	<p class="spell"> Spell the given word</p>
+	<p id="words">{{word}} </p>
+
+</div>
+	<div class="buttons">
+		<!-- <button id="first"> Start Recording</button>
+	<button id="second"> Stop Recording</button> -->
+	<button id="recordButton">Start Recording</button>
+    <button id="stopButton" disabled>Stop Recording</button>
+
+</div>
+<div id="spans">
+<span id="paras"></span>
+<span id="recordingsList"></span>
+</div>
+<p id="final"></p>
+
+<!-- <ol id="recordingsList"></ol> -->
+<!-- inserting these scripts at the end to be able to use all the elements in the DOM  -->
+<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+<!-- <script src="app.js"></script> -->
+<script src="{{url_for('static',filename='pp134.js')}}"> </script>
+<a href="http://localhost:5000/spell"><p id="butt"></p></a>
+<p id="links"></p>
+</body>
+</html>
+
+
+
