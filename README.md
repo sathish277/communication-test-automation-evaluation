@@ -7,3 +7,4 @@ We used [Google Speech Command Dataset](https://ai.googleblog.com/2017/08/launch
 We converted those audio files into Mel power Spectograms and then given that data to convolutional Neural network
 
 ##Spectrograms
+![spectrogram](https://upload.wikimedia.org/wikipedia/commons/c/c5/Spectrogram-19thC.png)
