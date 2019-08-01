@@ -23,8 +23,6 @@ These Spectrograms are given to Convolutional Neural network model for training.
 
 You can find the CNN model code in *model/project_ML_model.ipynb* file
 
-### UI Design
-Flask is used for deploying the model on web. 
-![UI Screenshot](https://drive.google.com/file/d/159GgS_bb7x74ijmV7FZjWhheAmO07C6i/view?usp=sharing)
+
 
 
